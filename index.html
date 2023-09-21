@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GitFav - Desafio N6 - RocketSeat</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./assets/logo.svg" alt="logo da pagina" />
+        <h1>GitFav</h1>
+      </div>
+      <div class="search">
+        <label for="input-search" class="sr-only">Usuário do Github</label>
+        <input
+          id="input-search"
+          type="text"
+          placeholder="Digite o Github username que quer favoritar"
+        />
+        <button>
+          <img src="./assets/star.svg" alt="botão para favoritar usuário" />
+          <span>FAVORITAR</span>
+        </button>
+      </div>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>Usuário</th>
+          <th>Repositories</th>
+          <th>Followers</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="user">
+            <img
+              src="https://avatars.githubusercontent.com/u/2254731?v=4"
+              alt="avatar do usuário"
+            />
+            <div>
+              <p>Fulano Velho</p>
+              <p>/FVelho</p>
+            </div>
+          </td>
+          <td class="repositories">37</td>
+          <td class="followers">666</td>
+          <td>
+            <button class="remove">Remover</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="user">
+            <img
+              src="https://avatars.githubusercontent.com/u/2254721?v=4"
+              alt="avatar do usuário"
+            />
+            <div>
+              <p>Sicrano Velho</p>
+              <p>/SVelho</p>
+            </div>
+          </td>
+          <td class="repositories">156</td>
+          <td class="followers">66666</td>
+          <td>
+            <button class="remove">Remover</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="user">
+            <img
+              src="https://avatars.githubusercontent.com/u/2254721?v=4"
+              alt="avatar do usuário"
+            />
+            <div>
+              <p>Sicrano Velho</p>
+              <p>/SVelho</p>
+            </div>
+          </td>
+          <td class="repositories">156</td>
+          <td class="followers">66666</td>
+          <td>
+            <button class="remove">Remover</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="user">
+            <img
+              src="https://avatars.githubusercontent.com/u/2254721?v=4"
+              alt="avatar do usuário"
+            />
+            <div>
+              <p>Sicrano Velho</p>
+              <p>/SVelho</p>
+            </div>
+          </td>
+          <td class="repositories">156</td>
+          <td class="followers">66666</td>
+          <td>
+            <button class="remove">Remover</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="user">
+            <img
+              src="https://avatars.githubusercontent.com/u/2254721?v=4"
+              alt="avatar do usuário"
+            />
+            <div>
+              <p>Sicrano Velho</p>
+              <p>/SVelho</p>
+            </div>
+          </td>
+          <td class="repositories">156</td>
+          <td class="followers">66666</td>
+          <td>
+            <button class="remove">Remover</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
