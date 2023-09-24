@@ -22,10 +22,6 @@ body {
   background-color: var(--bg-color);
 }
 
-body * {
-  font-family: var(--ff-primary);
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -80,6 +76,14 @@ header div:first-child h1 {
   border: 0;
   border-radius: 5px;
   background: #06181c;
+
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+
+  color: var(--text-color-primary);
 }
 
 .search input::placeholder {
@@ -106,6 +110,18 @@ header div:first-child h1 {
   color: var(--color-white);
   font-size: 1.4rem;
   font-weight: 700;
+}
+
+.search button:hover {
+  background: #fff;
+  color: #065e7c;
+  fill: #065e7c;
+
+  transition: all 0.2s;
+}
+
+.search button:hover svg path {
+  fill: #065e7c;
 }
 
 table {
@@ -217,6 +233,14 @@ table thead tr th {
   background: transparent;
 }
 
+tbody {
+  font-family: "Roboto";
+  height: 62.4rem;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #4a808c #092d38;
+}
+
 tbody tr:nth-child(odd) {
   background: rgba(6, 22, 27, 0.5);
 }
@@ -232,4 +256,44 @@ tbody tr:last-child {
 tbody tr td:last-child {
   display: grid;
   place-content: center;
+}
+
+.emptyTable {
+  height: 62.4rem;
+  grid-column: 1 / 5;
+}
+
+.emptyTable div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+
+  color: #4e5455;
+  font-family: "Roboto Mono";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24.781px; /* 61.953% */
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4a808c;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4a808c;
+  border-radius: 10px;
 }
